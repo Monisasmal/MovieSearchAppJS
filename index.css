@@ -1,0 +1,94 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* background-color: #f0f0f0; */
+    background: url(./netflix-background.png), rgba(0, 0, 0, 0.8);
+  }
+  
+  .container {
+    text-align: center;
+    width: 90%;
+    max-width: 800px;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    color: #f3f3f3;
+  }
+  
+  #search-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+  }
+  
+  .movie-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s ease;
+  }
+  
+  .movie-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .movie-card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .movie-card .info {
+    padding: 10px;
+  }
+  
+  .movie-card .title {
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0;
+    color: #444;
+  }
+  
+  .movie-card .year {
+    color: #777;
+  }
+  
+  .pagination {
+    margin-top: 20px;
+  }
+  
+  .pagination button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .pagination button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
